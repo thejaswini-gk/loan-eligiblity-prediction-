@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Eligibility Prediction</title>
+</head>
+<body>
+    <h2>Loan Eligibility Prediction Form</h2>
+    <form action="/predict" method="post">
+        <label>Gender (1 for Male, 0 for Female):</label>
+        <input type="number" name="Gender"><br><br>
+        <label>Married (1 for Yes, 0 for No):</label>
+        <input type="number" name="Married"><br><br>
+        <label>Applicant Income:</label>
+        <input type="number" name="ApplicantIncome"><br><br>
+        <label>Loan Amount:</label>
+        <input type="number" name="LoanAmount"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>Visualizations</h3>
+    <img src="/static/images/loan_status_bar.png" alt="Loan Status Bar Graph" style="width:400px;">
+    <img src="/static/images/gender_pie.png" alt="Gender Pie Chart" style="width:400px;">
+    <img src="/static/images/married_pie.png" alt="Marital Status Pie Chart" style="width:400px;">
+
+</body>
+</html>
+
+

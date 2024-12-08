@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction Result</title>
+</head>
+<body>
+    <h2>{{ prediction_text }}</h2>
+    <div>
+        <h3>LIME Explanation:</h3>
+        <div>{{ explanation | safe }}</div>
+    </div>
+
+    <h3>Visualizations</h3>
+    <img src="/static/images/prediction_result_bar.png" alt="Loan Prediction Result Bar Graph" style="width:400px;">
+    <img src="/static/images/gender_pie.png" alt="Gender Pie Chart" style="width:400px;">
+    <img src="/static/images/married_pie.png" alt="Marital Status Pie Chart" style="width:400px;">
+
+</body>
+</html>
